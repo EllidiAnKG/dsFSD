@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="shortcut icon" href="images/png/el.png" type="image/x-icon">
+    <title>Опрос</title>
+    <script src="js/formAction.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="cont">
+
+        <header>
+            <div class="grid grid-cols-3 grid-rows-1">
+                <div></div>
+
+                <img class="w-[80%]" src="images/png/logo.png" alt="logo">
+
+                <div class="justify-self-end self-center font-thin underline text-gray-500">
+                    <p>+7 (915) 283-24-17</p>
+                    <p>versiya@list.ru</p>
+                </div>
+            </div>
+
+            <nav class="flex flex-col mt-5 items-center w-full p-5 border-y">
+                <div class="w-[60%] flex flex-row justify-between font-semibold">
+                    <a href="">ГЛАВНАЯ</a>
+                    <a href="">ПОРТФОЛИО</a>
+                    <a href="">УСЛУГИ</a>
+                    <a href="">О БЮРО</a>
+                    <a href="">КОНТАКТЫ</a>
+                    <a href="">УЗНАТЬ СТОИМОСТЬ</a>
+                </div>
+            </nav>
+        </header>
+
+        <form class="my-14 flex flex-col w-[720px] shadow-md" name="test" action="">
+            <!-- шапка теста -->
+            <div>
+                <!-- Заголовок -->
+                <div class="grid grid-cols-2 grid-rows-1 py-9 px-10 bg-[#ececec]">
+                    <div class="flex flex-row">
+                        <img class="h-[1.5em]" src="images/svg/icons8-файл.svg" alt="">
+                        <p>Расчет стоимости дизайн-проекта</p>
+                    </div>
+
+                    <div class="justify-self-end">
+                        <p id="numPage">1/6</p>
+                    </div>
+                </div>
+
+                <!-- полоска состояния прохождения -->
+                <div class="grid grid-cols-6 bg-[#cbcbcb]">
+                    <div id="processLine" class="col-span-1 border-2 border-black"></div>
+                </div>
+            </div>
+
+            <!-- страницы теста -->
+            <div id="testPages" class="p-10">
+                <!-- 1 страница -->
+                <fieldset id="1">
+                    <!-- <h3>Дизайн интерьера какого объекта Вас интересует?</h3> -->
+
+                    
+                    <fieldset class="checkbox-group">
+                       <h3> <legend class="checkbox-group-legend">Дизайн интерьера какого объекта Вас интересует?</legend></h3>
+                        <div class="checkbox">
+                          <label class="checkbox-wrapper">
+                            <input type="radio" class="checkbox-input" name="da" />
+                            <span class="checkbox-tile">
+                              <span class="checkbox-icon">
+                                <img src="images/bmp/flat.bmp" alt="">
+                              </span>
+                              <span class="checkbox-label">Квартира</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="checkbox-wrapper">
+                            <input type="radio" class="checkbox-input" checked name="da"/>
+                            <span class="checkbox-tile">
+                              <span class="checkbox-icon">
+                                <img src="images/bmp/home.bmp" alt="">
+                              </span>
+                              <span class="checkbox-label">Дом</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="checkbox-wrapper">
+                            <input type="radio" class="checkbox-input"name="da" />
+                            <span class="checkbox-tile">
+                              <span class="checkbox-icon">
+                                <img src="images/bmp/place.bmp" alt="">
+                              </span>
+                              <span class="checkbox-label">Общественное пространство</span>
+                            </span>
+                          </label>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                      </fieldset>
+                    <!-- <div class="objectDisign grid grid-cols-3 grid-rows-1 mt-5 w-[80%]">
+                        
+                        <div>
+                            <input type="checkbox" name="appartman" value="appartman"> 
+                            <img src="images/bmp/flat.bmp" alt="">
+                            <p>Квартира</p>
+                        
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="house" value="house"> 
+                            <img src="images/bmp/home.bmp" alt="">
+                            <p>Дом</p>
+                            
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="publicSpace" value="publicSpace"> 
+                            <img src="images/bmp/place.bmp" alt="">
+                            <p>Общественное пространство</p>
+                        </div>
+                    </div> -->
+
+                </fieldset>
+
+                <!-- 2 страница -->
+                <fieldset id="2" hidden>
+                    <h3>Дизайн интерьера какого объекта Вас интересует?</h3>
+
+                    <div data-slider="1" class="w-full">
+                        <!-- надпись текущего значения -->
+                        <div class="grid grid-cols-10 justify-items-center w-full place-content-center">
+                            <div style="grid-column-start: 5;" class="sliderTitle col-span-1">
+                                <p class="font-thin">250</p>
+                            </div>
+                        </div>
+                        <!-- слайдер -->
+                        <input name="area" type="range" min="50" max="500" value="250" step="50" class="slider">
+                        <div class="flex flex-row justify-between font-thin">
+                            <p>50</p>
+                            <p>500</p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- 3 страница -->
+                <fieldset id="3" class="text-lg" hidden>
+                    <h3>Какой у Вас тип объекта?</h3>
+
+                    <div>
+                        <input name="typeObject" type="radio" id="newBuilding" value="newBuilding">
+                        <label for="newBuilding">Новостройка без ремонта</label>
+                    </div>
+
+                    <div>
+                        <input name="typeObject" type="radio" id="apartmentIsFinished" value="apartmentIsFinished">
+                        <label for="apartmentIsFinished">Квартира с отделкой</label>
+                    </div>
+
+                    <div>
+                        <input name="typeObject" type="radio" id="secondaryHousing" value="secondaryHousing">
+                        <label for="secondaryHousing">Вторичное жилье</label>
+
+                    </div>
+
+                    <div>
+                        <input name="typeObject" type="radio" id="commercialPremises" value="commercialPremises">
+                        <label for="commercialPremises">Коммерческое помещение</label>
+                    </div>
+
+                    <div>
+                        <input name="typeObject" type="radio" id="Other" value="Other">
+                        <label for="Other">Другое</label>
+                    </div>
+
+                </fieldset>
+
+                <!-- 4 страница -->
+                
+                
+                
+                
+                
+                <fieldset id="4" hidden>
+                    <h3>В каком стиле Вы хотите сделать ремонт?</h3>
+
+                    <!-- содержимое карточки теста -->
+                    <fieldset class="checkbox-group">
+                        <div class="checkbox">
+                          <label class="checkbox-wrapper">
+                            <input type="radio" class="checkbox-input" name="da"/>
+                            <span class="checkbox-tile">
+                              <span class="checkbox-icon">
+                                <img src="images/bmp/minimalism.bmp" alt="">
+                              </span>
+                              <span class="checkbox-label">Минимализм</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="checkbox-wrapper">
+                            <input type="radio" class="checkbox-input" name="da"/>
+                            <span class="checkbox-tile">
+                              <span class="checkbox-icon">
+                                <img src="images/bmp/neoclassic.bmp" alt="">
+                              </span>
+                              <span class="checkbox-label">Неоклассика</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="checkbox-wrapper">
+                            <input type="radio" class="checkbox-input"name="da" />
+                            <span class="checkbox-tile">
+                              <span class="checkbox-icon">
+                                <img src="images/bmp/scandinavian.bmp" alt="">
+                              </span>
+                              <span class="checkbox-label">Скандинавский</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="checkbox-wrapper">
+                            <input type="radio" class="checkbox-input" name="da"/>
+                            <span class="checkbox-tile">
+                              <span class="checkbox-icon">
+                                <img src="images/bmp/loft.bmp" alt="">
+                              </span>
+                              <span class="checkbox-label">Лофт</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="checkbox-wrapper">
+                            <input type="radio" class="checkbox-input"name="da" />
+                            <span class="checkbox-tile">
+                              <span class="checkbox-icon">
+                                <img src="images/bmp/modern.bmp" alt="">
+                              </span>
+                              <span class="checkbox-label">Современный</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="checkbox-wrapper">
+                            <input type="radio" class="checkbox-input" checked name="da"/>
+                            <span class="checkbox-tile">
+                              <span class="checkbox-icon">
+                                <img src="images/bmp/idk.bmp" alt="">
+                              </span>
+                              <span class="checkbox-label">Не разбираюсь в стилях</span>
+                            </span>
+                          </label>
+                        </div>
+                      </fieldset>
+                    
+                    <!-- <div class="objectDisign grid grid-cols-3 grid-rows-1 mt-5 w-[80%]">
+                        <div>
+                            <input type="checkbox" name="minimalism" value="minimalism"> 
+                            <img src="images/bmp/minimalism.bmp" alt="">
+                            <p>Минимализм</p>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="neoclassic" value="neoclassic"> 
+                            <img src="images/bmp/neoclassic.bmp" alt="">
+                            <p>Неоклассика</p>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="scandinavian" value="scandinavian"> 
+                            <img src="images/bmp/scandinavian.bmp" alt="">
+                            <p>Скандинавский</p>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="loft" value="loft"> 
+                            <img src="images/bmp/loft.bmp" alt="">
+                            <p>Лофт</p>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="modern" value="modern"> 
+                            <img src="images/bmp/modern.bmp" alt="">
+                            <p>Современный</p>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="idk" value="idk"> 
+                            <img src="images/bmp/idk.bmp" alt="">
+                            <p>Не разбираюсь в стилях</p>
+                        </div>
+                    </div> -->
+
+                </fieldset>
+
+                <!-- 5 страница -->
+                <fieldset id="5" hidden>
+                    <h3>На какой бюджет Вы ориентируетесь?</h3>
+
+                    <div data-slider="2" class="w-full">
+                        <!-- надпись текущего значения -->
+                        <div class="grid grid-cols-10 justify-items-center w-full place-content-center">
+                            <div style="grid-column-start: 5;" class="sliderTitle col-span-1">
+                                <p class="font-thin">250</p>
+                            </div>
+                        </div>
+                        <!-- слайдер -->
+                        <input name="area" type="range" min="50" max="500" value="250" step="50" class="slider">
+                        <div class="flex flex-row justify-between font-thin">
+                            <p>50</p>
+                            <p>500</p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- 6 страница -->
+                <fieldset id="6" class="text-lg" hidden>
+                    <h3>Когда Вы хотите начать дизайн-проект?</h3>
+
+                    <div>
+                        <input name="typeObject" type="radio" id="newBuilding" value="newBuilding">
+                        <label for="newBuilding">Чем раньше, тем лучше</label>
+                    </div>
+
+                    <div>
+                        <input name="typeObject" type="radio" id="apartmentIsFinished" value="apartmentIsFinished">
+                        <label for="apartmentIsFinished">В течение недели</label>
+                    </div>
+
+                    <div>
+                        <input name="typeObject" type="radio" id="secondaryHousing" value="secondaryHousing">
+                        <label for="secondaryHousing">В течение месяца</label>
+
+                    </div>
+
+                    <div>
+                        <input name="typeObject" type="radio" id="commercialPremises" value="commercialPremises">
+                        <label for="commercialPremises">В течение полугода</label>
+                    </div>
+
+                    
+                </fieldset>
+            </div>
+
+            <!-- стрелочки для переключения -->
+            <div class="grid grid-cols-2 grid-rows-1 px-10 pb-10">
+                <button type="button" onclick="handlerPageForm('back')" class="inactiveButton button justify-self-start
+                before:content-['←'] before:text-[1.5em] before:mr-2">Назад</button>
+
+                <button type="button" onclick="handlerPageForm('forward')" class="activeButton button justify-self-end
+                after:content-['→'] after:text-[1.5em] after:ml-2">Вперед</button>
+            </div>
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="flex flex-col items-center bg-[#1c1c1c] w-full">
+            <div class="p-32">
+                <div class="grid grid-cols-2 gap-10">
+                    <!-- иконки -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <!-- ютуб -->
+                        <img src="images/svg/icon-youtube.svg" alt="">
+
+                        <!-- телеграм -->
+                        <img src="images/svg/icon-tg.svg" alt="">
+
+                        <!-- инстаграм -->
+                        <img src="images/svg/icon-inst.svg" alt="">
+
+                        <img src="images/svg/icon-fb.svg" alt="">
+                    </div>
+
+                    <div class="self-center  font-bold">
+                        <p>+7 (915) 283-24-17</p>
+                        <p>versiya@list.ru</p>
+                    </div>
+                </div>
+
+                <div class="mt-14">
+                    <p class="text-xl">Каширское ш., 3, корп. 2, стр. 4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-center p-3 items-center space-x-10 bg-[#525252] w-full">
+            <p class="text-[#000000] text-xl">Made on Tilda by Ekaterina Deynekina</p>
+            <div class="flex flex-row space-x-6 child:w-10">
+                <img src="images/svg/icon-behance-black.svg" alt="behance">
+                <img src="images/svg/icon-whatsapp-black.svg" alt="Whatsapp">
+                <img src="images/svg/icon-tg-black.svg" alt="Telegram">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

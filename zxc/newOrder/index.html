@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="shortcut icon" href="images/png/el.png" type="image/x-icon">
+    <script src="./checkbox.js" defer></script>
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="grid grid-cols-3 grid-rows-1">
+            <div></div>
+
+            <img class="w-[80%]" src="images/png/logo.png" alt="logo">
+
+            <div class="justify-self-end self-center font-thin underline text-gray-500">
+                <p>+7 (915) 283-24-17</p>
+                <p>versiya@list.ru</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col mt-5 items-center w-full p-5 border-y">
+            <nav class="w-[60%] flex flex-row justify-between font-semibold">
+                <button data-link="index">ГЛАВНАЯ</button>
+                <button data-link="portfolio">ПОРТФОЛИО</button>
+                <button data-link="prices">УСЛУГИ</button>
+                <button data-link="team">О БЮРО</button>
+                <button data-link="contacts">КОНТАКТЫ</button>
+                <button data-link="test">УЗНАТЬ СТОИМОСТЬ</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- страницы -->
+    <div class="cont">
+
+        <!-- главная -->
+        <div hidden id="index" data-title="Дизайн интерьера квартир и домов" class="w-full">
+            <section class="h-[700px] bg-[url(/images/png/noroot.png)] bg-center">
+                <div class="flex flex-col h-full justify-end bg-black/80">
+                    <div class="text-center text-white my-16">
+                        <h1 class="text-4xl my-10">От мечты до реализации один шаг</h1>
+                        <p class="text-md font-thin">Мы дизайн-бюро. Работаем в сфере дизайна интерьеров с <br>2014
+                            года.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-col items-center p-20">
+                <div class="space-y-5 w-1/3 text-center text-gray-500 text-thin">
+                    <p>Мы занимаемся дизайн-проектированием частных и коммерческих интерьеров в России и за рубежом.</p>
+                    <p>Предлагаем комплекс услуг от профессиональной консультации до комплексной разработки и реализации
+                        интерьера.</p>
+                </div>
+            </section>
+
+            <section class="flex flex-col items-center">
+                <div class="grid grid-cols-4 fourImage h-[600px]">
+                    <div>
+                        <img src="images/jpg/4.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/jpg/21.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/jpg/3__2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/jpg/2.jpg" alt="">
+                    </div>
+                </div>
+                <button class="shadow-sm shadow-gray-600 button border border-black mt-10">
+                    Смотреть все проекты
+                </button>
+            </section>
+
+            <section class="flex flex-col items-center w-full p-16 text-white mt-24
+                bg-[#1c1c1c]">
+                <div>
+                    <h2 class="text-5xl">Тарифы</h2>
+                </div>
+
+                <div class="tariff">
+                    <div>
+                        <div>
+                            <h3>Light</h3>
+                            <p>Планировочное решение</p>
+                            <p>Коллажи</p>
+                            <p>Ведомость используемых <br>материалов</p>
+                        </div>
+
+                        <button class="button-lg border">2750 руб./м²</button>
+                    </div>
+
+                    <div class="border-x border-white">
+                        <div>
+                            <h3>Optimum</h3>
+                            <p>Планировочное решение</p>
+                            <p>Коллажи</p>
+                            <p>Альбом с рабочей документацией</p>
+                            <p>Ведомость оборудования и <br>материалов</p>
+                        </div>
+
+                        <button class="button-lg border">3000 руб./м²</button>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h3>Premium</h3>
+                            <p>Планировочное решение</p>
+                            <p>Фотореалистичные 3D визуализации</p>
+                            <p>Альбом с рабочей документацией</p>
+                            <p>Ведомость оборудования и <br>материалов с возможностью <br>отслеживания бюджета</p>
+                        </div>
+
+                        <button class="button-lg border">3300 руб./м²</button>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <button class="button border">Узнать подробнее</button>
+                </div>
+            </section>
+
+            <section class="flex flex-col items-center">
+                <p class="relative top-[100px] text-white py-2 px-10 bg-black">EL INTERIOR</p>
+                <div class="border-y border-black mt-20 p-16 w-2/3 text-center text-gray-500">
+                    <p>Мы всегда делаем свою работу качественно, эстетично и с логикой.<br>
+                        Выбирайте нас, ведь лучшая жизнь начинается дома!</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- портфолио -->
+        <div hidden id="portfolio" data-title="Портфолио дизайна интерьера">
+            <section class="text-center mt-16">
+                <p>EL INTERIOR</p>
+                <h1 class="text-4xl my-10">Наше портфолио</h1>
+                <p>Ознакомьтесь с нашими работами.</p>
+            </section>
+
+            <section class="flex flex-col items-center mt-10">
+                <div class="grid grid-cols-3 auto-rows-fr w-[80%] gap-10">
+                    <img src="images/jpg/1c2093be-f242-4ee4-b.jpg" alt="">
+                    <img src="images/jpg/1f279af1-3d0e-42c4-9.jpg" alt="">
+                    <img src="images/jpg/photo534592922380361.jpg" alt="">
+
+                    <img src="images/jpg/2 (1).jpg" alt="">
+                    <img src="images/jpg/photo.jpg" alt="">
+                    <img src="images/png/IMG_0029.png" alt="">
+
+                    <img src="images/jpg/1.jpg" alt="">
+                    <img src="images/jpg/11.jpg" alt="">
+                    <img src="images/jpg/1 (1).jpg" alt="">
+
+                    <img src="images/jpg/1 (2).jpg" alt="">
+                </div>
+
+                <button class="button border border-black">Показать еще</button>
+            </section>
+        </div>
+
+        <!-- услуги -->
+        <div hidden id="prices" class="w-full" data-title="Услуги дизайн-проекта интерьера">
+            <div class="flex flex-col items-center space-y-20 w-full">
+                <section class="flex flex-col items-center">
+                    <h1 class="text-4xl mt-20">Как мы работаем?</h1>
+
+
+                </section>
+
+                <section class="flex flex-col items-center">
+                    <h2 class="text-4xl">Сколько это стоит?</h2>
+
+                    <div class="tariff">
+                        <div>
+                            <div>
+                                <h3>Light</h3>
+                                <p>Планировочное решение</p>
+                                <p>Коллажи</p>
+                                <p>Ведомость используемых <br>материалов</p>
+                            </div>
+
+                            <button class="button-lg border">2750 руб./м²</button>
+                        </div>
+
+                        <div class="border-x border-black">
+                            <div>
+                                <h3>Optimum*</h3>
+                                <p>Планировочное решение</p>
+                                <p>Коллажи</p>
+                                <p>Альбом с рабочей документацией</p>
+                                <p>Ведомость оборудования и <br>материалов</p>
+                            </div>
+
+                            <button class="button-lg border">3000 руб./м²</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <h3>Premium*</h3>
+                                <p>Планировочное решение</p>
+                                <p>Фотореалистичные 3D визуализации</p>
+                                <p>Альбом с рабочей документацией</p>
+                                <p>Ведомость оборудования и <br>материалов с возможностью <br>отслеживания бюджета</p>
+                            </div>
+
+                            <button class="button-lg border">3300 руб./м²</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="flex flex-col items-center space-y-[2.5em] text-xl w-[60%]">
+                    <p>*Для тарифа <span class="underline">PREMIUM</span> дополнительно подача концепции в формате
+                        фотореалистичной 3D визуализации.</p>
+
+                    <hr class="border-black w-3/12">
+
+                    <div class="space-y-[1.5em]">
+                        <p>*Для пакета <span class="underline">OPTIMUM</span> дополнительно альбом рабочей документации,
+                            включающий в себя план:</p>
+                        <ul class="font-thin text-lg" type="circleWithDot">
+                            <li>расстановки мебели,</li>
+                            <li>демонтажа перегородок,</li>
+                            <li>монтажа перегородок,</li>
+                            <li>открывания дверей,</li>
+                            <li>покрытий пола,</li>
+                            <li>покрытий стен,</li>
+                            <li>потолков,</li>
+                            <li>освещения,</li>
+                            <li>света по группам с выключателями,</li>
+                            <li>электрики,</li>
+                            <li>сантехники.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="flex flex-col items-center bg-[#1c1c1c] text-white w-full p-20">
+                    <h2 class="text-4xl">Как происходит оплата?</h2>
+                    <p class="text-xl mt-10">Оплата производится в 3 этапа:</p>
+
+                    <ol class="text-xl font-thin space-y-10 mt-16 w-[40%]" type="bigAround">
+                        <li>
+                            <p>1</p>
+                            <p>Внесение предоплаты. 30% от общей стоимости при подписании договора.</p>
+                        </li>
+                        <li>
+                            <p>2</p>
+                            <p>После утверждения планировки, путем подписания акта приема-передачи, оплата 40% от общей
+                                стоимости.</p>
+                        </li>
+                        <li>
+                            <p>3</p>
+                            <p>30% после сдачи альбома чертежей и ведомостей.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="flex flex-col items-center">
+                    <h2 class="text-4xl">Авторский надзор</h2>
+
+                    <div class="flex flex-row mt-32 w-[65%]">
+                        <div class="supervision">
+                            <div>
+                                <div>
+                                    <img src="images/svg/Layer_6.svg" alt="">
+                                </div>
+
+                                <div>
+                                    <h3>Стоимость</h3>
+                                    <p>Авторский надзор рассчитывается индивидуально от 30000 руб.\мес.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <img src="images/svg/photostudio_outdoors.svg" alt="">
+                                </div>
+
+                                <div>
+                                    <h3>Выезд дизайнера на объект</h3>
+                                    <p>Включает в себя 4 выезда дизайнера на объект в месяц (при необходимости с
+                                        заказчиком в магазин для подбора материалов и оборудования)</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <img src="images/svg/Tilda_Icons_28_law_consulting.svg" alt="">
+                                </div>
+
+                                <div>
+                                    <h3>Связь</h3>
+                                    <p>Оперативный ответ на вопросы строительной бригады по телефону в рабочее время.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-2">
+                            <img src="images/jpg/5.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- о бюро -->
+        <div hidden id="team" data-title="О дизайнерском бюро">
+            <div class="flex flex-col items-center w-full">
+                <div class="text-center space-y-10 my-20">
+                    <h1 class="text-5xl">О нас</h1>
+                    <p class="text-xl">El Interior подберёт вашей квартире дизайн, в который вы влюбитесь.</p>
+                </div>
+
+                <!-- картники -->
+                <div class="grid grid-cols-3 grid-rows-2">
+                    <div class="col-span-2 row-span-2">
+                        <img src="images/jpg/IMG_1339.jpg" alt="">
+                    </div>
+
+                    <div class="col-span-1">
+                        <img src="images/jpg/IMG_1340.jpg" alt="">
+                    </div>
+
+                    <div class="col-span-1">
+                        <img src="images/jpg/IMG_1341.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="w-1/2 whitespace-pre-line text-xl">
+                    Студия дизайна <span class="font-bold italic">El Interior</span> — творческий коллектив, сотрудники которого постоянно развиваются
+                    профессионально. В нашей команде работают архитекторы с профильным образованием московских вузов и
+                    опытом реализации сложнейших проектов.
+
+
+                    Наша <span class="font-bold">философия</span> состоит в том, что мы работаем на <span class="font-bold">качество, а не на количество</span>. Именно 
+                    поэтому мы не набираем многочисленный штат и не берем большой объем заказов для того, чтобы 
+                    уделять каждому объекту максимальное количество времени.
+
+
+                    Мы предлагаем широкий спектр услуг в области проектирования интерьеров: от профессиональной
+                    консультации до <span class="font-bold">комплексной разработки</span> и <span class="font-bold">реализации интерьеров</span> как жилых, так и 
+                    общественных помещений. Наша команда готова предложить необычные интерьерные решения, 
+                    которые можно воплотить в жизнь.
+
+
+                    В каждом проекте можно увидеть сложные, но не менее <span class="font-bold">эффектные</span> решения. Точно выверенный 
+                    подход, авторские столярные решения, созданные по нашим визуализациям и чертежам в сочетании 
+                    с различными материалами, фактурами и текстурами дают в результате дизайн, который <span class="font-bold">полностью 
+                    подходит</span> заказчику.
+
+
+                    <span class="font-bold italic">Любой наш проект – это история от первой встречи до реализации.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- контакты -->
+        <div hidden id="contacts" data-title="Контакты">
+            <div class="flex flex-row mt-20">
+                <div class="w-7/12">
+                    <img src="images/jpg/photo (1).jpg" alt="">
+                </div>
+
+                <div class="w-5/12 p-20">
+                    <div>
+                        <h1 class="text-5xl font-thin">Наши контакты</h1>
+                        <p class="text-xl my-[1em]">Если вы хотите с нами связаться, заполните форму.</p>
+                    </div>
+
+                    <form name="form">
+                        <div>
+                            <label for="email">Электронная почта</label>
+                            <input placeholder="example@gmail.ru" type="email" name="email">
+                        </div>
+
+                        <div>
+                            <label for="name">Имя</label>
+                            <input placeholder="Ваше имя" type="text" name="name">
+                        </div>
+
+                        <div>
+                            <label for="telephone">Телефон</label>
+                            <input class="placeholder:text-gray-400" placeholder="+0 (000) 00-00" type="tel" name="telephone">
+                        </div>
+
+                        <div>
+                            <label for="message">Сообщение</label>
+                            <textarea type="text" name="telephone"></textarea>
+                        </div>
+                        
+                        <button class="button-lg border border-black">Отправил</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- страница перехода на тест -->
+        <div class="" hidden id="test" data-title="Расчет стоимости дизайн-проекта">
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex flex-col items-center bg-[#1c1c1c] w-full">
+            <div class="p-32">
+                <div class="grid grid-cols-2 gap-10">
+                    <!-- иконки -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <!-- ютуб -->
+                        <img src="images/svg/icon-youtube.svg" alt="">
+
+                        <!-- телеграм -->
+                        <img src="images/svg/icon-tg.svg" alt="">
+
+                        <!-- инстаграм -->
+                        <img src="images/svg/icon-inst.svg" alt="">
+
+                        <img src="images/svg/icon-fb.svg" alt="">
+                    </div>
+
+                    <div class="self-center  font-bold">
+                        <p>+7 (915) 283-24-17</p>
+                        <p>versiya@list.ru</p>
+                    </div>
+                </div>
+
+                <div class="mt-14">
+                    <p class="text-xl">Каширское ш., 3, корп. 2, стр. 4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-center p-3 items-center space-x-10 bg-[#525252] w-full">
+            <p class="text-[#000000] text-xl">Made on Tilda by Ekaterina Deynekina</p>
+            <div class="flex flex-row space-x-6 child:w-10">
+                <img src="images/svg/icon-behance-black.svg" alt="behance">
+                <img src="images/svg/icon-whatsapp-black.svg" alt="Whatsapp">
+                <img src="images/svg/icon-tg-black.svg" alt="Telegram">
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
